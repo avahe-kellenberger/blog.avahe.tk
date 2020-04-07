@@ -4,14 +4,46 @@
   
   <url>
     <loc>https://blog.avahe.tk/</loc>
+    <lastmod>2020-04-06T15:48:45-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.avahe.tk/categories/</loc>
+    <loc>https://blog.avahe.tk/tags/linux/</loc>
+    <lastmod>2020-04-06T15:48:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.avahe.tk/tags/neovim/</loc>
+    <lastmod>2020-04-06T15:48:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.avahe.tk/posts/</loc>
+    <lastmod>2020-04-06T15:48:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.avahe.tk/posts/neovim-typescript/part1/</loc>
+    <lastmod>2020-04-06T15:48:45-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.avahe.tk/tags/</loc>
+    <lastmod>2020-04-06T15:48:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.avahe.tk/tags/typescript/</loc>
+    <lastmod>2020-04-06T15:48:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.avahe.tk/tags/vim/</loc>
+    <lastmod>2020-04-06T15:48:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.avahe.tk/categories/</loc>
   </url>
   
 </urlset>
