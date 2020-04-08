@@ -6,10 +6,22 @@
     <description>Recent content on Avahe&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2020 15:48:45 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2020 19:04:27 -0400</lastBuildDate>
     
 	<atom:link href="https://blog.avahe.tk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Setting up Neovim for Typescript - Part 2</title>
+      <link>https://blog.avahe.tk/posts/neovim-typescript/part2/</link>
+      <pubDate>Tue, 07 Apr 2020 19:04:27 -0400</pubDate>
+      
+      <guid>https://blog.avahe.tk/posts/neovim-typescript/part2/</guid>
+      <description>Topic: Setting up eslint and prettier Part 2 will focus on eslint and prettierjs configuration.
+eslint enforces syntax rules, while prettier is more focused on code formatting.
+tl;dr / I am an experienced (neo)vim user Install coc-eslint using g:coc_global_extensions
+Getting Started coc-eslint In part one we declared a variable named g:coc_global_extensions in our ~/.config/nvim/init.vim file. In order to install this new CoC extension, add &#39;coc-eslint&#39; to the array as shown below.</description>
+    </item>
     
     <item>
       <title>Setting up Neovim for Typescript - Part 1</title>

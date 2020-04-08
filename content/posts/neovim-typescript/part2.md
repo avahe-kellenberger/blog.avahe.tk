@@ -18,7 +18,7 @@ Install [coc-eslint](https://github.com/neoclide/coc-eslint#coc-eslint) using `g
 
 ## coc-eslint
 
-In part one we declared a variable named `g:coc_global_extensions` in our `~/.config/init.vim` file. In order to install this new CoC extension, add `'coc-eslint'` to the array as shown below.
+In part one we declared a variable named `g:coc_global_extensions` in our `~/.config/nvim/init.vim` file. In order to install this new CoC extension, add `'coc-eslint'` to the array as shown below.
 
 Be sure to include the comma after `'coc-tsserver'`
 
