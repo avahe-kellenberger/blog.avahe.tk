@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>(Neo)vim - Fzf and Ripgrep // Avahe&#39;s Blog</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.69.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Avahe Kellenberger" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://blog.avahe.tk/css/main.min.c04908dbb4ad318a8b0a2fd7d15b6a0205494dbc3775b5d7c7c3b8ad11b1c7f7.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="(Neo)vim - Fzf and Ripgrep"/>
+<meta name="twitter:description" content="Prefer Video? Video form of this blog post
+tl;dr / I am an experienced (neo)vim user You may want to use a plugin manager; we are using vim-plug for the tutorial. Install fzf.vim and ripgrep. Configure key mappings for :Files, :GFiles, and :Rg  Functionality We will gain the following functionality from integrating Fzf and Ripgrep into (neo)vim:
+Fuzzy searching files (:Files) Fuzzy searching open buffers (:Buffers) Fuzzy searching files tracked by git (:GFiles) Blazing fast textual search with Ripgrep Installation  Installation docs for fzf."/>
+
+    <meta property="og:title" content="(Neo)vim - Fzf and Ripgrep" />
+<meta property="og:description" content="Prefer Video? Video form of this blog post
+tl;dr / I am an experienced (neo)vim user You may want to use a plugin manager; we are using vim-plug for the tutorial. Install fzf.vim and ripgrep. Configure key mappings for :Files, :GFiles, and :Rg  Functionality We will gain the following functionality from integrating Fzf and Ripgrep into (neo)vim:
+Fuzzy searching files (:Files) Fuzzy searching open buffers (:Buffers) Fuzzy searching files tracked by git (:GFiles) Blazing fast textual search with Ripgrep Installation  Installation docs for fzf." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.avahe.tk/posts/neovim/fzf-ripgrep/" />
+<meta property="article:published_time" content="2020-05-02T22:02:33-04:00" />
+<meta property="article:modified_time" content="2020-05-02T22:02:33-04:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://blog.avahe.tk"><img class="app-header-avatar" src="/avatar.jpg" alt="Avahe Kellenberger" /></a>
+      <h1>Avahe&#39;s Blog</h1>
+      <p>My blog about things</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/avahe-kellenberger" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://www.youtube.com/channel/UCqX8ZNI7rfx9QiF5Lrnv6kg" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-youtube">
+  <title>youtube</title>
+  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">(Neo)vim - Fzf and Ripgrep</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 2, 2020
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      <h1 id="prefer-video">Prefer Video?</h1>
+<p><strong><a href="https://www.youtube.com/watch?v=loNdGAnKEf8&amp;feature=youtu.be">Video form of this blog post</a></strong></p>
+<h3 id="tldr--i-am-an-experienced-neovim-user">tl;dr / I am an experienced (neo)vim user</h3>
+<ol start="0">
+<li>You may want to use a plugin manager; we are using <a href="https://github.com/junegunn/vim-plug">vim-plug</a> for the tutorial.</li>
+<li>Install <a href="https://github.com/junegunn/fzf.vim">fzf.vim</a> and <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a>.</li>
+<li>Configure key mappings for <code>:Files</code>, <code>:GFiles</code>,  and <code>:Rg</code></li>
+</ol>
+<h2 id="functionality">Functionality</h2>
+<p>We will gain the following functionality from integrating Fzf and Ripgrep into (neo)vim:</p>
+<h3 id="fuzzy-searching-files-files">Fuzzy searching files (:Files)</h3>
+<p><img src="/neovim-fzf/files.png" alt=":Files"></p>
+<h3 id="fuzzy-searching-open-buffers-buffers">Fuzzy searching open buffers (:Buffers)</h3>
+<p><img src="/neovim-fzf/buffers.png" alt=":Buffers"></p>
+<h3 id="fuzzy-searching-files-tracked-by-git-gfiles">Fuzzy searching files tracked by git (:GFiles)</h3>
+<p><img src="/neovim-fzf/filtering.png" alt="Filtering"></p>
+<h3 id="blazing-fast-textual-search-with-ripgrep">Blazing fast textual search with Ripgrep</h3>
+<p><img src="/neovim-fzf/ripgrep.png" alt=":Rg"></p>
+<h2 id="installation">Installation</h2>
+<ul>
+<li><a href="https://github.com/junegunn/fzf#installation">Installation docs for fzf.vim</a></li>
+<li><a href="https://github.com/BurntSushi/ripgrep#installation">Installation docs for ripgrep</a></li>
+</ul>
+<p>Once you have the tools installed, let&rsquo;s set up some basic key mappings in <code>init.vim</code> or <code>.vimrc</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-VimL" data-lang="VimL"><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">nnoremap</span> &lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">p</span>&gt; :<span style="color:#a6e22e">Files</span>&lt;<span style="color:#a6e22e">CR</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">nnoremap</span> &lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">o</span>&gt; :<span style="color:#a6e22e">Buffers</span>&lt;<span style="color:#a6e22e">CR</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">nnoremap</span> &lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">g</span>&gt; :<span style="color:#a6e22e">GFiles</span>&lt;<span style="color:#a6e22e">CR</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">nnoremap</span> &lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">f</span>&gt; :<span style="color:#a6e22e">Rg</span> <span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>One thing to note, is that there is an empty space after <code>:Rg</code>. This is so we don&rsquo;t have to bother adding it manually after pressing <code>&lt;C-f&gt;</code>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>That&rsquo;s all there is to it! Go ahead and give your new key mappings a whirl.</p>
+<p>Don&rsquo;t forget to check out <a href="https://github.com/junegunn/fzf.vim#commands">the numerous available commands for fzf.vim</a> to really personalize your setup and make your vim editing fly.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Avahe&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2020 19:04:27 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 22:02:33 -0400</lastBuildDate>
     
 	<atom:link href="https://blog.avahe.tk/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Neo)vim - Fzf and Ripgrep</title>
+      <link>https://blog.avahe.tk/posts/neovim/fzf-ripgrep/</link>
+      <pubDate>Sat, 02 May 2020 22:02:33 -0400</pubDate>
+      
+      <guid>https://blog.avahe.tk/posts/neovim/fzf-ripgrep/</guid>
+      <description>Prefer Video? Video form of this blog post
+tl;dr / I am an experienced (neo)vim user You may want to use a plugin manager; we are using vim-plug for the tutorial. Install fzf.vim and ripgrep. Configure key mappings for :Files, :GFiles, and :Rg  Functionality We will gain the following functionality from integrating Fzf and Ripgrep into (neo)vim:
+Fuzzy searching files (:Files) Fuzzy searching open buffers (:Buffers) Fuzzy searching files tracked by git (:GFiles) Blazing fast textual search with Ripgrep Installation  Installation docs for fzf.</description>
+    </item>
     
     <item>
       <title>Setting up Neovim for Typescript - Part 2</title>
