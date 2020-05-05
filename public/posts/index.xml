@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Avahe&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2020 22:02:33 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 17:56:17 -0400</lastBuildDate>
     
 	<atom:link href="https://blog.avahe.tk/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Neo)vim - Editing Remote Files with SSHFS</title>
+      <link>https://blog.avahe.tk/posts/neovim/sshfs/</link>
+      <pubDate>Mon, 04 May 2020 17:56:17 -0400</pubDate>
+      
+      <guid>https://blog.avahe.tk/posts/neovim/sshfs/</guid>
+      <description>Prefer Video? Video form of this blog post
+tl;dr  Install SSHFS via your package manager Create a mount dir (e.g. ~/mysite.com) sshfs -o default_permissions myusername@mysite.com:/ ~/mysite.com  Functionality Using SSHFS, we can mount a remote directory to our local file system and edit files with ease.
+ Use our local (neo)vim settings and plugins Explore the remote file system (just like using ssh) Files are updated on the server on file save  The biggest advantage for me is being able to use my local (neo)vim setup.</description>
+    </item>
     
     <item>
       <title>(Neo)vim - Fzf and Ripgrep</title>
