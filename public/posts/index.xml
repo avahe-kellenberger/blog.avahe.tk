@@ -6,10 +6,25 @@
     <description>Recent content in Posts on Avahe&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 May 2020 17:56:17 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 16:22:13 -0400</lastBuildDate>
     
 	<atom:link href="https://blog.avahe.tk/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nimdow - A tiling window manager written in Nim</title>
+      <link>https://blog.avahe.tk/posts/nimdow/part1/</link>
+      <pubDate>Tue, 12 May 2020 16:22:13 -0400</pubDate>
+      
+      <guid>https://blog.avahe.tk/posts/nimdow/part1/</guid>
+      <description>Nimdow GitHub Link
+What is Nim? Nim is an awesome programming language that I&amp;rsquo;ve recently picked up.
+An excerpt from the official site:
+&amp;ldquo;Efficient, expressive, elegant
+Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.&amp;quot;
+It has quickly become my favorite programming language. Nim is very powerful and easy to use.
+The Project Nimdow is a tiling window manager (twm) written in Nim.</description>
+    </item>
     
     <item>
       <title>(Neo)vim - Editing Remote Files with SSHFS</title>
