@@ -38,8 +38,8 @@ Features implemented at time of writing this article (I will keep the list updat
 - [x] Multiple tags (single tag viewed at one time)
 - [x] Fullscreen windows
 - [ ] Multihead support
-- [x] User configuration file loaded from `$XDG_CONFIG_HOME` (or `$HOME/.config`)
-- [ ] Status bar integration (probably 3rd party status bar)
+- [x] User configuration file loaded from $XDG_CONFIG_HOME (or $HOME/.config)
+- [x] Status bar integration (mostly integrated with Polybar, see [#29](https://github.com/avahe-kellenberger/nimdow/issues/29))
 - [ ] Layouts:
   - [x] Master/stack
   - [ ] Monocle
@@ -56,8 +56,7 @@ Features implemented at time of writing this article (I will keep the list updat
 
 ### Official Release (version 1.0)
 
-This is a partial list, and will be expanded as I decide on which features to add.
-
+- TBA (partial list, still in discussion)
 - [ ] Floating window support
 - [ ] Keybindings:
   - [ ] View multiple tags
