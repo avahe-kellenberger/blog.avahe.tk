@@ -26,44 +26,45 @@ It has quickly become my favorite programming language. Nim is very powerful and
 
 Currently, the project has not reached Beta release, but is being developed at a fast and steady pace.
 
-**Beta release is planned for June 1st, 2020.**
-
 # Planned Features
 
 Features implemented at time of writing this article (I will keep the list updated).
 
-### Beta Release (version 0.5)
-
+### Version 0.5
 
 - [x] Multiple tags (single tag viewed at one time)
 - [x] Fullscreen windows
-- [ ] Multihead support
+- [x] Multihead support
 - [x] User configuration file loaded from $XDG_CONFIG_HOME (or $HOME/.config)
-- [x] Status bar integration (mostly integrated with Polybar, see [#29](https://github.com/avahe-kellenberger/nimdow/issues/29))
-- [ ] Layouts:
+- [x] Status bar integration (single monitor - integrated with Polybar)
+  - [ ] Multihead status bar integration (Writing our own bar - See [#29](https://github.com/avahe-kellenberger/nimdow/issues/29))
+- [x] Floating window support
+  - [x] Move windows with super + left click
+  - [x] Resize windows with super + right click drag
+- [x] Layouts:
   - [x] Master/stack
-  - [ ] Monocle
-- [ ] Keybindings:
+- [x] Keybindings:
   - [x] Close window
   - [x] Toggle fullscreen
-  - [ ] Switch layout to master/stack
-  - [ ] Switch layout to monocle
   - [x] Navigate windows
   - [x] Navigate tags
   - [x] Move windows in stack
   - [x] Move windows between tags
-  - [ ] Add/remove window per tag
 
-### Official Release (version 1.0)
+### Version 1.0
 
 - TBA (partial list, still in discussion)
-- [ ] Floating window support
+- [ ] Layouts
+  - [ ] Monocle
 - [ ] Keybindings:
+  - [x] Move window between monitors
+  - [ ] Add/remove window per tag
   - [ ] View multiple tags
   - [ ] Assign single window to multiple tags
-  - [ ] Move window between screens
-  - [ ] Swap tags between screens
+  - [ ] Swap tags between monitors
   - [ ] Reload Nimdow (to apply configuration changes)
+  - [ ] Switch layout to master/stack
+  - [ ] Switch layout to monocle
 
 
 # Tags? What about workspaces?
