@@ -24,20 +24,19 @@ It has quickly become my favorite programming language. Nim is very powerful and
 
 [Nimdow](https://github.com/avahe-kellenberger/nimdow/tree/master) is a [tiling window manager (twm)](https://en.wikipedia.org/wiki/Tiling_window_manager) written in Nim. The goal of Nimdow is to be a full-featured minimal twm, similar to that of [dwm](https://dwm.suckless.org/) with more sensible defaults.
 
-Currently, the project has not reached Beta release, but is being developed at a fast and steady pace.
+Currently, the project is in Beta release, and is being developed at a fast and steady pace.
 
 # Planned Features
 
 Features implemented at time of writing this article (I will keep the list updated).
 
-### Version 0.5
+### Version 0.5 (Released!)
 
 - [x] Multiple tags (single tag viewed at one time)
 - [x] Fullscreen windows
 - [x] Multihead support
 - [x] User configuration file loaded from $XDG_CONFIG_HOME (or $HOME/.config)
-- [x] Status bar integration (single monitor - integrated with Polybar)
-  - [ ] Multihead status bar integration (Writing our own bar - See [#29](https://github.com/avahe-kellenberger/nimdow/issues/29))
+- [x] Status bar integration
 - [x] Floating window support
   - [x] Move windows with super + left click
   - [x] Resize windows with super + right click drag
